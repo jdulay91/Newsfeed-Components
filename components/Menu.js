@@ -26,12 +26,15 @@ const menuMaker = (array) => {
 
   const menuButtonSelector = document.querySelector('.menu-button');
   menuButtonSelector.addEventListener('click',()=>{
-    if (div.className ==='menu'){
-      div.className = 'menu--open';
-    }else{
-      div.className = 'menu';
-    }
+    div.classList.toggle('menu--open')
   })
+  // menuButtonSelector.addEventListener('click',()=>{
+  //   if (div.className ==='menu'){
+  //     div.className = 'menu--open';
+  //   }else{
+  //     div.className = 'menu';
+  //   }
+  // })
   return div
 }
 const header = document.querySelector('.header');
